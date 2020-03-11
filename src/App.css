@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-Logo{
+  height: 38px;
+  width: 38px;
+  padding: 8px 0 8px 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.container{
   background-color: #282c34;
-  min-height: 100vh;
+}
+.navbar {
+  background-color: #282c34;
+  min-height: 8vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-left: 30px;
+  justify-content: space-between;
+  width: 960px;
+  margin: 0 auto;
+}
+.nav-links{
+  display: flex;
+  align-items: right;
+  list-style-type: none;
+  cursor: pointer;
+  padding-right: 30px;
+}
+
+li {
+  position: relative;
+}
+.nav-links li a{
+  color: pink;
+  text-decoration: none;
+}
+.nav-links li a:hover{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  margin:0 0 0 20px;   
+
 }
 
-@keyframes App-logo-spin {
-  from {
+
+li:hover::before {
+  content: "[ ";
+  animation: example;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  position: absolute;
+  animation-fill-mode: forwards;
+  color: white;
+}
+
+li:hover::after {
+  content: " ]";
+  animation: exampletwo;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  position: absolute;
+  animation-fill-mode: forwards;
+  color: white;
+}
+
+@keyframes example {
+  0% {
+    left: 10px;
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+
+  100% {
+    left: -10px;
+    opacity: 1;
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@keyframes exampletwo {
+  from {
+    right: 10px;
+    opacity: 0;
+    transform: rotate(-90deg);
   }
+
+  to {
+    right: -10px;
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+.billboard{
+  min-height: 100vh;
+  background-color: tomato;  
+  margin: 0 auto;
+}
+
+.billboard-container {
+
+ 
+  display: flex;
+  align-items: center;
+ 
+ 
+  width: 960px;
+  margin: 0 auto;
 }
