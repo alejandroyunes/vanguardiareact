@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
+import React  from 'react'
 import "./App.css"
 import logo from './logo2.svg';
 import { Link } from 'react-router-dom';
+import 'typeface-roboto';
 export default function Navbar() {
 
         return (
@@ -17,7 +18,10 @@ export default function Navbar() {
                         <Link to="/Rooms">Diseño web</Link>
                         </li>
                         <li>
-                        <Link to="/Rooms">Contacto</Link>
+                        <Link to="/Rooms">Blog</Link>
+                        </li>
+                        <li>
+                        <Link to="/Rooms">Contact</Link>
                         </li>
                     </ul> 
                 </div>

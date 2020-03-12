@@ -3,17 +3,22 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Navbar from './Navbar'
 import Billboard from './Billboard'
+import TextDetails from './components/TextDetails'
+import ProductCard from './components/ProductCard'
+
+
 export default function App() {
   return (
-    <Router>
- 
+   
 
+    <Router>
     <Navbar/>
     <Billboard/>
+    <TextDetails/>
+    <ProductCard/>
         <Switch>
           <Route exact path="/">
             <Home />

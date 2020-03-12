@@ -1,5 +1,6 @@
 import React from 'react'
 import "./App.css"
+import BillboardDetails from './components/billboardDetails';
 
 
 export default function Billboard() {
@@ -9,7 +10,7 @@ export default function Billboard() {
             <div className="billboard">
             <div className="billboard-container">
                 <div>
-                    <p>hellow</p>
+                    <BillboardDetails/>
                 </div>
             </div>
             </div>
