@@ -27,22 +27,23 @@ export default function ResponsiveFontSizes() {
   return (
     
       <ThemeProvider theme={theme}>
-        <div className="center-content-vertically">
-            <div>
-            < Typography variant="h3">Your Story Starts With Us</Typography>
-            </div>
-        
+          <ul className="main-billboard-container">
+          
+                <li className="main-billboard-item">
+                  < Typography variant="h3">Your Story Starts With Us</Typography>
+                    <div >
+                      <Button className={classes.root}>
+                        Inicio
+                      </Button>
+                      <Button className={classes.root}>
+                        Segundo
+                      </Button>
+                    </div>
+                </li>
+                <li className="main-billboard-item "></li>
+           
+          </ul>
 
-                <div >
-                <Button className={classes.root}>
-                Inicio
-                </Button>
-            
-            <Button className={classes.root}>
-                Segundo
-            </Button>
-                </div>
-      </div>
       </ThemeProvider>
   
   );

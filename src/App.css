@@ -60,7 +60,7 @@
 }
 
 
-li:hover::before {
+.nav-links li:hover::before {
   content: "[ ";
   animation: example;
   animation-duration: 0.5s;
@@ -70,7 +70,7 @@ li:hover::before {
   color: var(--primaryColor);
 }
 
-li:hover::after {
+.nav-links li:hover::after {
   content: " ]";
   animation: exampletwo;
   animation-duration: 0.5s;
@@ -109,7 +109,7 @@ li:hover::after {
 }
 /* Billboard*/
 .billboard{
-  min-height: 80vh;
+  min-height: 60vh;
   margin: 0 auto;
   background-image: url('./images/bg.jpg');
   background-position: 50% 50%; 
@@ -123,11 +123,32 @@ li:hover::after {
   margin: 0 auto;
 }
 
-.center-content-vertically{
-  min-height: 60vh;
+
+.main-billboard-container  {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  margin: 0;  
+  list-style: none;
+  border: 1px solid red;
+  padding: 30px;
+}
+
+
+.main-billboard-container  > li:nth-child(1) {
+  margin-right: 20px;
+  color: var(--mainWhite);
+  width: 300px;
+  border: 1px solid red;
+}
+
+.main-billboard-container  > li:nth-child(2) {
+  background-image: url('./images/laptop.png');
+  background-size:contain;
+  background-repeat:no-repeat;
+  width: 660px;
+  border: 1px solid red;
+  padding-right: -var(--mainBlack);
 }
 
 
