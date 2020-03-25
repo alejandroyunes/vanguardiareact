@@ -1,0 +1,43 @@
+$light-color:#f4f4f4;
+$primary-color: #cb61a0;
+$secondary-color: #ff8700;
+$main-blue: #0e6cff;
+$main-white: #fff;
+//$primary-color: #cb61a0;
+//$secondary-color: #78428d;
+$main-gray: #282c34;
+
+//set text color based on bg
+
+@function set-text-color($color){
+    @if(lightness($color) > 70){
+        @return #333;
+    } @else {
+        @return #fff;
+    }
+}
+
+// set background & text color
+@mixin set-background($color){
+    background-color: $color;
+    color: set-text-color($color)
+}
+
+//margin & padding classes
+$space-amounts:(1,2,3,4,5);
+
+@each $space in $space-amounts{
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+
+}
