@@ -192,6 +192,19 @@ flex-container {
     user-select: none;
   }
 
+  .half-laptop {
+      position: relative;
+
+     &-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 50%;
+     }
+  
+  }
+
 @import 'mobile';
 @import 'utilities';
 @import 'buttons';

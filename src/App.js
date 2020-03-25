@@ -8,6 +8,7 @@ import Navbar from './Navbar'
 import Billboard from './Billboard'
 import TextDetails from './components/TextDetails'
 import ProductCard from './components/ProductCard'
+import HalfLaptop from './components/halfLaptop'
 
 
 export default function App() {
@@ -16,7 +17,9 @@ export default function App() {
     <Navbar/>
     <Billboard/>
     <TextDetails/>
+      <HalfLaptop/>
     <ProductCard/>
+
         <Switch>
           <Route exact path="/">
             <Home />
