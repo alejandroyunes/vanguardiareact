@@ -1,9 +1,9 @@
 %btn {
     display: inline-block;
     border-radius: 5px;
-    padding: 8px 20px;
+    padding: 8px 32px;
     margin: 3px;
-
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
     &:hover {
         transform: scale(.98);
     }
@@ -16,3 +16,8 @@
         @extend %btn;
         @include set-background($secondary-color)
     }
+    .btn-center{
+        text-align: center;
+    }
+
+    
