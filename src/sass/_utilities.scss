@@ -5,15 +5,8 @@
     overflow: auto;
 }
 
-.header-wrapper {
-    width: 100%;
-    height: 70px;
-  }
 
-.billboard-wrapper{
-    background-image: url("../images//home-hero-slants.svg");   
-    background-size: cover; 
-  }
+
 
 .full-width-wrapper {
     background-color: #fff;
@@ -36,23 +29,23 @@ text-align: center;
 }
 
 
-// // Fonts
-// $font-12: 0.75rem;
-// $font-14: 0.875rem;
-// $font-base: 16px;
-// $font-18: 1.125rem;
-// $font-20: 1.25rem;
-// $font-24: 1.5rem;
-// $font-26: 1.625rem;
-// $font-28: 1.75rem;
-// $font-32: 2rem;
-// $font-38: 2.375rem;
-// $font-40: 2.5rem;
-// $font-50: 3.125rem;
-// $font-56: 3.5rem;
-// $font-72: 4.5rem;
-// $font-88: 5.5rem;
-// $font-96: 6rem;
+// Fonts
+$font-12: 0.75rem;
+$font-14: 0.875rem;
+$font-base: 16px;
+$font-18: 1.125rem;
+$font-20: 1.25rem;
+$font-24: 1.5rem;
+$font-26: 1.625rem;
+$font-28: 1.75rem;
+$font-32: 2rem;
+$font-38: 2.375rem;
+$font-40: 2.5rem;
+$font-50: 3.125rem;
+$font-56: 3.5rem;
+$font-72: 4.5rem;
+$font-88: 5.5rem;
+$font-96: 6rem;
 
 // // Letter spacing
 // $spacing-020: -0.2px;

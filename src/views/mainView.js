@@ -12,14 +12,13 @@ export default function mainView() {
 
     <>
 
-    <div className='billboard-wrapper'>
+    
       <Header />
       <Billboard />
-      <SubBillboard />
-    </div>
+
+
       <Products />
-      <ProductImage />
-      <CellphoneProduct />
+
     </>
   );
 }

@@ -2,36 +2,33 @@ import React, { useState, useEffect } from "react";
 import logo from "../../logo2.svg";
 
 function Header() {
-  const [header, setHeader] = useState("header");
+  const [header, setHeader] = useState("header__show");
 
-  const listenScrollEvent = (event) => {
+  const listenScrollEvent = () => {
     if (window.scrollY < 70) {
-      return setHeader("header");
-      console.log("scrollTop" + window.scrollY);
+      return setHeader("header__show");
     } else if (window.scrollY > 70) {
-      console.log("scrollY header2" + window.scrollY);
-      return setHeader("header2");
+      return setHeader("header__hide");
     }
   };
 
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
-
     return () => window.removeEventListener("scroll", listenScrollEvent);
   }, []);
 
   return (
     <>
-        <div className="header-wrapper">
+        <div className="header__wrapper">
         <header className={header}>
-            <div className="logo">
+            <div className="header__logo">
               <img src={logo} />
             </div>
-            <ul className="links">
-              <li className="link-item">home</li>
-              <li className="link-item">about</li>
-              <li className="link-item">blog</li>
-              <li className="link-item">contact</li>
+            <ul className="header__links">
+              <li className="header__link__item">home</li>
+              <li className="header__link__item">about</li>
+              <li className="header__link__item">blog</li>
+              <li className="header__link__item">contact</li>
             </ul>
         </header>
         </div>

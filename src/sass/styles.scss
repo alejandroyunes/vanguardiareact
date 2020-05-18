@@ -1,44 +1,142 @@
-@import 'config';
-@import 'mobile';
-@import 'utilities';
-@import 'buttons';
-* {
-    box-shadow: border-box;
-    margin: 0;
-    padding: 0;
+@import "config";
+@import "mobile";
+@import "utilities";
+@import "buttons";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-body{
-  // background: rgb(16,101,167);
-  // background: linear-gradient(90deg, rgba(16,101,167,1) 0%, rgba(3,82,151,1) 64%, rgba(2,80,150,1) 70%, rgba(23,80,151,1) 100%);
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-  background: linear-gradient(90deg, rgb(20,21,23) 0%, rgb(27,26,29) 70%, rgb(21,22,24) 100%);
-  font-family: 'Nunito', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  
+body {
+  background: #f2ecec;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.6;
+}
+.align__center {
+  text-align: center;
 }
 img {
-    width: 100%;
+  width: 100%;
 }
 
 a {
-   text-decoration: none; 
+  text-decoration: none;
 }
 
-.header {
+//navigation
+.header__wrapper {
+  width: 100%;
+  height: 70px;
+}
+.header__show {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   max-width: 2000px;
   background-color: transparent;
-  height: 70px;
-  color: #fff;
+height: 70px;
+
+  color: $secondary-color;
   margin: 0 auto;
   z-index: 3;
 }
 
-.header2 {
+.header__hide {
   position: fixed;
   top: 0%;
   text-align: center;
@@ -51,13 +149,13 @@ a {
   background-color: #fff;
   color: $dark-black;
   z-index: 2;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   animation: navbar-slice-down 1s;
   left: 50%;
   transform: translate(-50%, 0);
 
-  li:hover::before{
+  li:hover::before {
     content: "[";
     animation: left-bracket;
     animation-duration: 0.5s;
@@ -86,24 +184,24 @@ a {
     background-color: #fff;
     color: #fff;
   }
-  
+
   100% {
     background-color: #fff;
   }
 }
 
-.logo {
+.header__logo {
   margin: 0 24px;
-  max-width:48px;
+  max-width: 48px;
   min-width: 35px;
 }
 
-.links {
+.header__links {
   padding: 0;
   margin: 0 24px;
 }
 
-.link-item{
+.header__link__item {
   display: inline-block;
   padding: 8px;
   margin: 0 12px;
@@ -117,9 +215,9 @@ li {
   position: relative;
 }
 
-li:hover::before{
+li:hover::before {
   content: "[";
-  color: #fff;
+  color: $secondary-color;;
   animation: left-bracket;
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
@@ -128,13 +226,12 @@ li:hover::before{
 }
 li:hover::after {
   content: "]";
-  color: #fff;
+  color: $secondary-color;;
   animation: right-bracket;
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
   position: absolute;
   animation-fill-mode: forwards;
-
 }
 
 @keyframes left-bracket {
@@ -164,109 +261,143 @@ li:hover::after {
   }
 }
 
-.showcase-content{
-   padding: 4% 2%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 1100px;
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-    div{
-      width: 65%;
-    }
-   img {
-     width: 35%;
-   }
-    h1 {
-        font-size: 5em;
-        line-height: 1.2;
-        color: whitesmoke;  
-    }
-}
-
-.main-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
+.showcase__content {
+  padding: 2% 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  
+  &__title {
+    font-size: 3.8em;
+    
     line-height: 1.2;
+  }
+  &__svg {
+   
+  }
 }
 
-    .main-text{
-    padding: 30px 20%;
-    text-align: center;
-}
+.showcase__content__two {
+  padding: 0 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  max-width: 1200px;
+  color: $secondary-color;
+    &__text {
 
-  .shorthand { 
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-flex-direction: row;
-    flex-direction: row;
+    width: 60%;
+    font-size: $font-24;
+
   }
-  
-  .longhand { 
-    -webkit-flex-flow: wrap row;
-    flex-flow: wrap row;
-    
-  }
-  
-  .longhand li {
-    background:transparent;
-  }
-  //SubBillboard
-  .subBillboard-wrapper{
-    max-width: 2000px;
-    height: 150px;
-    margin: 0 auto;
+  &__email {
     display: flex;
-    
-  }
+  background-color: #f1f1f1;
+  padding: 2% 0 0;
 
-  .background-color-wrapper-1{
-    height: 150px;
-    flex: 1;
-    background-color: rgba(31, 39, 50, .4);
-    position: relative;
-  }
-  .background-color-wrapper-2{
-    height: 150px;
-    background-color: rgba(43, 186, 203, .2);
-    width: 35%;
-  }
-
- 
-  .half{
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    padding: 30px 70px;
+  input[type=text], input[type=submit] {
     width: 70%;
-    overflow: hidden;
-     flex: 1;
-     color: #fff;
-     border: 1px solid yellowgreen;
-     display: flex;
-     justify-content: flex-end;
+    padding: 12px;
+    display: inline-block;
+    border: 1px solid #ccc;
 
-    h5{
-      padding-right: 80px;
-      border: 1px solid red;
-    }
   }
-  .second-half{
-    border: 1px solid yellowgreen;
-    padding: 30px 70px;
-    color: #fff;
-    display: flex;
-  }
-
-
+  input[type=submit] {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    width: 30%;
+    margin-left: 8px;
+    cursor: pointer;
+   }
   
-  //cellphone part
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
 
-.center-content{
+  }
+}
+
+.main-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.main-text {
+  padding: 30px 20%;
+  text-align: center;
+}
+
+.shorthand {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+.longhand {
+  -webkit-flex-flow: wrap row;
+  flex-flow: wrap row;
+}
+
+.longhand li {
+  background: transparent;
+}
+//SubBillboard
+.subBillboard-wrapper {
+  max-width: 2000px;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.background-color-wrapper-1 {
+  height: 150px;
+  flex: 1;
+  background-color: rgba(31, 39, 50, 0.4);
+  position: relative;
+}
+.background-color-wrapper-2 {
+  height: 150px;
+  background-color: rgba(43, 186, 203, 0.2);
+  width: 35%;
+}
+
+.half {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 30px 70px;
+  width: 70%;
+  overflow: hidden;
+  flex: 1;
+  color: #fff;
+  border: 1px solid yellowgreen;
+  display: flex;
+  justify-content: flex-end;
+
+  h5 {
+    padding-right: 80px;
+    border: 1px solid red;
+  }
+}
+.second-half {
+  border: 1px solid yellowgreen;
+  padding: 30px 70px;
+  color: #fff;
+  display: flex;
+}
+
+//cellphone part
+
+.center-content {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -278,7 +409,6 @@ li:hover::after {
 .some-page-wrapper {
   display: flex;
   background: white;
-  
 }
 
 .row {
@@ -298,9 +428,7 @@ li:hover::after {
 .orange-column {
   background-color: orange;
   height: 100px;
-  
 }
-
 
 .green-column {
   background-color: green;
@@ -309,9 +437,50 @@ li:hover::after {
 }
 
 
+#GearBig {
+  animation: gear 6s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
 
+@keyframes gear {
+  0% {
+      transform: rotateZ(0deg);
+  }
+  100% {
+      transform: rotateZ(360deg);
+  }
+}
 
+#gearSmall {
+  animation: gearTwo 6s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
 
+@keyframes gearTwo {
+  0% {
+      transform: rotateZ(360deg);
+  }
+  100% {
+      transform: rotateZ(0deg);
+  }
+}
 
+#righthandLaptop{
+  animation: hands 1s ease-in-out infinite alternate;
+  
+  transform-box: fill-box;
+}
 
+@keyframes hands {
+  0% {
+      transform: rotate(0deg);
+      
 
+  }
+  100% {
+    transform: rotate(10deg);
+    transform-origin: 60% 40%;
+  }
+}
