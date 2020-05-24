@@ -29,6 +29,18 @@ text-align: center;
 }
 
 
+$default-padding4: 4px;
+$default-padding8: 8px;
+$default-padding12: 12px;
+$default-padding16: 16px;
+$default-padding20: 20px;
+$default-padding24: 24px;
+$default-padding32: 32px;
+$default-padding64: 64px;
+
+$default-button-shadow:  0 6px 8px 0 rgba(0,0,0,0.1), 0 9px 25px 0 rgba(0,0,0,0.1);
+
+
 // Fonts
 $font-12: 0.75rem;
 $font-14: 0.875rem;
@@ -47,17 +59,17 @@ $font-72: 4.5rem;
 $font-88: 5.5rem;
 $font-96: 6rem;
 
-// // Letter spacing
-// $spacing-020: -0.2px;
-// $spacing-027: -0.27px;
-// $spacing-base: -0.3px;
-// $spacing-032: -0.32px;
-// $spacing-038: -0.38px;
-// $spacing-040: -0.4px;
-// $spacing-045: -0.45px;
-// $spacing-046: -0.46px;
-// $spacing-050: -0.5px;
-// $spacing-060: -0.6px;
+// Letter spacing
+$spacing-020: -0.2px;
+$spacing-027: -0.27px;
+$spacing-base: -0.3px;
+$spacing-032: -0.32px;
+$spacing-038: -0.38px;
+$spacing-040: -0.4px;
+$spacing-045: -0.45px;
+$spacing-046: -0.46px;
+$spacing-050: -0.5px;
+$spacing-060: -0.6px;
 
 // // Base Colors
 // $color-red: #fa5e5b;
