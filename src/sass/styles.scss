@@ -106,9 +106,6 @@ body {
   font-family: "Nunito", sans-serif;
   line-height: 1.6;
 }
-.align__center {
-  text-align: center;
-}
 img {
   width: 100%;
 }
@@ -251,13 +248,12 @@ li:hover::after {
 
 //billboard__title__and__paragraph
 .showcase__content {
-  padding: 4% 0 4%;
+  padding: $default-padding32 0;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   max-width: 1140px;
-  border: 1px solid red;
   &__svg {
     width: 50%;
     padding: 2%;
@@ -268,14 +264,13 @@ li:hover::after {
     padding: 2%;
    h1{
     font-weight: bold;
-    color: $secondary-color;
+    color: $dark-blue;
     font-size: 3.8em;
-    font-style: normal;
     line-height: 1.2;
    }
    h2{
     color: $lighter-black;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     padding: $default-padding16 0;
    }
@@ -290,7 +285,7 @@ li:hover::after {
       border: 1px solid #ccc;
     }
     input[type=submit] {
-      background-color: $primary-color;
+      background-color: $dark-blue;
       color: white;
       border: none;
       width: 30%;
@@ -305,48 +300,54 @@ li:hover::after {
 
 
 
-.flex-container {
+.three__card__container{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: stretch;
-	align-content: stretch;
-}
-
-.flex-item:nth-child(1) {
-padding: $default-padding32;
+  align-content: stretch;
+&__wrapper{
+padding: $default-padding24;
 margin: $default-padding32;
 background-color: #fff;
 border-radius: 0.5rem;
-width: 280px;
+
+width: 300px;
+height: 480px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-text-align: center;  
 }
 
-.flex-item:nth-child(2) {
-
-  padding: $default-padding32;
-  margin: $default-padding32;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  width: 280px;
-  text-align: center; 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+&__img__div{
+  text-align: center;
+}
+img{
+  width: 150px;
+  height: 150px;
   }
+h2{
+  font-size: 1.5rem;
+  padding: $default-padding8 0;
+  font-weight: 700;
+  color: #666666;
+}
+h3{
+  color: #AE3C43;
+  padding: $default-padding8 0;
+  font-weight: 600;
+}
+h6{
+  color: $light-gray;
+  padding: $default-padding8 0;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+p{
+  padding: $default-padding8 0;
+}
 
-.flex-item:nth-child(3) {
-  width: 280px;
-  text-align: center; 
-  padding: $default-padding32;
-  margin: $default-padding32;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-
-
+}
 
 
 

@@ -255,10 +255,6 @@ body {
   line-height: 1.6;
 }
 
-.align__center {
-  text-align: center;
-}
-
 img {
   width: 100%;
 }
@@ -492,7 +488,7 @@ a {
 }
 
 .showcase__content {
-  padding: 4% 0 4%;
+  padding: 32px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,7 +500,6 @@ a {
           justify-content: center;
   margin: 0 auto;
   max-width: 1140px;
-  border: 1px solid red;
 }
 
 .showcase__content__svg {
@@ -520,15 +515,14 @@ a {
 
 .showcase__content__title h1 {
   font-weight: bold;
-  color: #1c1d3e;
+  color: #508EBC;
   font-size: 3.8em;
-  font-style: normal;
   line-height: 1.2;
 }
 
 .showcase__content__title h2 {
   color: #5f5f5f;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 2rem;
   padding: 16px 0;
 }
@@ -548,7 +542,7 @@ a {
 }
 
 .showcase__content__email input[type=submit] {
-  background-color: #2bbacb;
+  background-color: #508EBC;
   color: white;
   border: none;
   width: 30%;
@@ -560,7 +554,7 @@ a {
   opacity: 0.8;
 }
 
-.flex-container {
+.three__card__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,37 +573,49 @@ a {
       align-content: stretch;
 }
 
-.flex-item:nth-child(1) {
-  padding: 32px;
+.three__card__container__wrapper {
+  padding: 24px;
   margin: 32px;
   background-color: #fff;
   border-radius: 0.5rem;
-  width: 280px;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-}
-
-.flex-item:nth-child(2) {
-  padding: 32px;
-  margin: 32px;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  width: 280px;
-  text-align: center;
+  width: 300px;
+  height: 480px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.flex-item:nth-child(3) {
-  width: 280px;
+.three__card__container__img__div {
   text-align: center;
-  padding: 32px;
-  margin: 32px;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.three__card__container img {
+  width: 150px;
+  height: 150px;
+}
+
+.three__card__container h2 {
+  font-size: 1.5rem;
+  padding: 8px 0;
+  font-weight: 700;
+  color: #666666;
+}
+
+.three__card__container h3 {
+  color: #AE3C43;
+  padding: 8px 0;
+  font-weight: 600;
+}
+
+.three__card__container h6 {
+  color: #B3B3B3;
+  padding: 8px 0;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.three__card__container p {
+  padding: 8px 0;
 }
 
 .main-title {

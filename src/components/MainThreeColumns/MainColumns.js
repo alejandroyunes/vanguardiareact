@@ -1,66 +1,77 @@
 import React from "react";
-import ResponsiveDesignIcon from '../../images/responsive-design-icon.svg'
-import MobileDesignIcon from '../../images/mobile-design-icon.svg'
-import SeoDesignIcon from '../../images/seo-design-icon.svg'
+import ResponsiveDesignIcon from "../../images/responsive-design-icon.svg";
+import MobileDesignIcon from "../../images/mobile-design-icon.svg";
+import SeoDesignIcon from "../../images/seo-design-icon.svg";
 
 export default function MainColumns() {
   return (
     <>
-
       <div className="showcase__content">
-        
+        <div className="three__card__container">
+          {/* ****************************  one ******************************** */}
 
-        <div className="flex-container">
-         <div className="flex-item">
-          <div>
-          <img src={ResponsiveDesignIcon} />
-          </div>
-         <h2>
-             Responsive Design
-         </h2>
-         <br/>
-         <p>Illustration Gallery</p>
-         <br/>
-         <p>Leading digital agency with solid design and development expertise. We build mobile and web products for startups and design intricate trading platforms.</p>
-         
-          <p>view more</p>
-         </div>
-         <div className="flex-item">
-         <div style={{width: '100px', margin: ' 0 auto'}}>
-         <img src={MobileDesignIcon} />
-         </div>
-         <h2>
-             Responsive Design
-         </h2>
-         <br/>
-         <p>Illustration Gallery</p>
-         <br/>
-         <p>Leading digital agency with solid design and development expertise. We build mobile and web products for startups and design intricate trading platforms.</p>
-         
-          <p>view more</p>
-         </div>
-         <div className="flex-item">
-         <div><img src={SeoDesignIcon} /></div>
-         <h2>
-             Responsive Design
-         </h2>
-         <br/>
-         <p>Illustration Gallery</p>
-         <br/>
-         <p>Leading digital agency with solid design and development expertise. We build mobile and web products for startups and design intricate trading platforms.</p>
-         
-          <p>view more</p>
-         </div>
-         </div>
-        
+          <div className="three__card__container__wrapper">
+            
+            
+              
+                  <div className="three__card__container__img__div">
+                    <img src={ResponsiveDesignIcon} />
+                  </div>
+                  <h2>Responsive Design</h2>
 
-        
+                  <h3>Illustration Gallery</h3>
 
-      </div>
+                  <p>
+                    Leading digital agency with solid design and development
+                    expertise. We build mobile and web products for startups and
+                    design intricate trading platforms.
+                  </p>
 
-
+                  <h6>view more</h6>
+              
      
-      
+
+          </div>
+          {/* ****************************  two ******************************** */}
+
+          <div className="three__card__container__wrapper">
+            <div className="three__card__container__img__div">
+              <img src={MobileDesignIcon} />
+            </div>
+            <h2>Mobile Design</h2>
+
+            <h3>Illustration Gallery</h3>
+
+            <p>
+              Leading digital agency with solid design and development
+              expertise. We build mobile and web products for startups and
+              design intricate trading platforms.
+            </p>
+
+            <h6>view more</h6>
+          </div>
+          {/* ****************************  three ******************************** */}
+
+          <div className="three__card__container__wrapper">
+            <div className="three__card__container__img__div">
+              <img src={SeoDesignIcon} />
+            </div>
+            <h2>SEO & Marketing</h2>
+
+            <h3>Illustration Gallery</h3>
+
+            <p>
+              Leading digital agency with solid design and development
+              expertise. We build mobile and web products for startups and
+              design intricate trading platforms.
+            </p>
+
+            <h6>view more</h6>
+          </div>
+
+          {/* ****************************  end ******************************** */}
+        </div>
+      </div>
     </>
   );
 }
