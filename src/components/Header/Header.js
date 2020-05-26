@@ -18,7 +18,7 @@ function Header() {
   }, []);
 
   return (
-    <>
+   
         <div className="header">
         <header className={header}>
           <div className="header__logo">
@@ -37,7 +37,6 @@ function Header() {
         </header>
         </div>
       
-    </>
   );
 }
 

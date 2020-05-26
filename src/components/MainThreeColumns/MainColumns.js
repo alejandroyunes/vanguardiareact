@@ -2,11 +2,11 @@ import React from "react";
 import ResponsiveDesignIcon from "../../images/responsive-design-icon.svg";
 import MobileDesignIcon from "../../images/mobile-design-icon.svg";
 import SeoDesignIcon from "../../images/seo-design-icon.svg";
+import RocketAnimation from "./rocketAnimation"
 
 export default function MainColumns() {
   return (
     <>
-      <div className="showcase__content">
         <div className="three__card__container">
           {/* ****************************  one ******************************** */}
 
@@ -29,7 +29,6 @@ export default function MainColumns() {
 
                   <h6>view more</h6>
               
-     
 
           </div>
           {/* ****************************  two ******************************** */}
@@ -54,7 +53,7 @@ export default function MainColumns() {
 
           <div className="three__card__container__wrapper">
             <div className="three__card__container__img__div">
-              <img src={SeoDesignIcon} />
+            <RocketAnimation/>
             </div>
             <h2>SEO & Marketing</h2>
 
@@ -71,7 +70,6 @@ export default function MainColumns() {
 
           {/* ****************************  end ******************************** */}
         </div>
-      </div>
     </>
   );
 }

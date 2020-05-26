@@ -7,6 +7,7 @@ import CellphoneProduct from "../components/CellphoneProduct/CellphoneProduct";
 import Header from "../components/Header/Header";
 import HeaderTwo from "../components/Header/HeaderTwo";
 import MainColumns from "../components/MainThreeColumns/MainColumns";
+import {MainDesignSection} from "../components/MainDesignSection/MainDesignSection";
 
 export default function mainView() {
   return (
@@ -17,7 +18,7 @@ export default function mainView() {
       <Header />
       <Billboard />
       <MainColumns />
-
+  <MainDesignSection/>
       <Products />
 
     </>
